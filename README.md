@@ -11,7 +11,8 @@ The goal of this project is to show how Azure resources can be deployed and mana
 - Azure Resource Group
 - Azure Storage Account
 - Azure Role Assignment (Reader)
-- Azure Virtual Network *(planned / or update this after you add it)*
+- Azure Virtual Network
+- Azure Subnet
 
 ## Security Focus
 
