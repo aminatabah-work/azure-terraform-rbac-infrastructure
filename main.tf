@@ -25,6 +25,7 @@ resource "azurerm_storage_account" "storage" {
   account_tier             = "Standard"
   account_replication_type = "LRS"
 }
+
 resource "azurerm_role_assignment" "storage_reader" {
   scope                = azurerm_storage_account.storage.id
   role_definition_name = "Reader"
