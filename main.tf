@@ -26,6 +26,7 @@ resource "azurerm_storage_account" "storage" {
   account_replication_type = "LRS"
 }
 
+# Assign Reader role to demonstrate RBAC at resource scope
 resource "azurerm_role_assignment" "storage_reader" {
   scope                = azurerm_storage_account.storage.id
   role_definition_name = "Reader"
