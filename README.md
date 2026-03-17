@@ -4,7 +4,7 @@ This project demonstrates how to provision secure Azure infrastructure using Ter
 
 ## Overview
 
-The goal of this project is to show how Azure resources can be deployed and managed using Infrastructure as Code (IaC) while applying secure access design. This project provisions foundational Azure resources and includes an example RBAC role assignment scoped to a storage account.
+The goal of this project is to show how Azure resources can be deployed and managed using Infrastructure as Code (IaC) while applying secure access design. This project provisions foundational Azure resources and includes an example RBAC role assignment scoped to a storage account. This project demonstrates Infrastructure as Code (IaC) practices by managing Azure resources and access control using Terraform.
 
 ## Current Azure Resources
 
@@ -24,6 +24,15 @@ This project includes a basic Azure RBAC role assignment example to demonstrate 
 - Microsoft Azure
 - GitHub
 - Infrastructure as Code (IaC)
+
+## Skills Demonstrated
+
+- Azure Infrastructure Provisioning
+- Terraform (Infrastructure as Code)
+- Role-Based Access Control (RBAC)
+- Identity and Access Management (IAM)
+- Azure Networking (Virtual Network & Subnet)
+- Cloud Security Best Practices
 
 ## Terraform Files
 
