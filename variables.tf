@@ -9,3 +9,8 @@ variable "project_name" {
   type        = string
   default     = "azure-rbac-lab"
 }
+variable "principal_id" {
+  description = "The Azure AD principal ID to assign RBAC permissions to"
+  type        = string
+  default     = "00000000-0000-0000-0000-000000000000"
+}
