@@ -1,19 +1,40 @@
 # Architecture Overview
 
-This project is designed to provision a secure Azure environment using Terraform.
+This project provisions a simple Azure environment using Terraform with a focus on secure access control and infrastructure reproducibility.
 
-## Planned Architecture
+## Architecture Diagram
 
-- Azure Resource Group
-- Virtual Network
-- Subnet
-- Storage Account
-- Linux Virtual Machine
-- RBAC role assignments
+```text
++-------------------------------+
+| Azure Resource Group          |
+| rg-azure-rbac-lab             |
++---------------+---------------+
+                |
+                |
+        +-------v----------------------+
+        | Azure Storage Account        |
+        | abahstorage12345             |
+        +---------------+--------------+
+                        |
+                        |
+        +---------------v--------------+
+        | RBAC Role Assignment         |
+        | Reader role                  |
+        | Principal ID from variable   |
+        +------------------------------+
 
-## Security Focus
-
-- Reproducible deployments with Terraform
-- Role-based access control (RBAC)
-- Clear separation of infrastructure components
-- Foundation for secure Azure cloud administration
++-------------------------------+
+| Azure Resource Group          |
++---------------+---------------+
+                |
+     +----------+-----------+
+     |                      |
++----v-----+        +-------v---------+
+| Storage  |        | Virtual Network |
+| Account  |        | + Subnet        |
++----+-----+        +-----------------+
+     |
++----v------------------+
+| RBAC Role Assignment  |
+| Reader                |
++-----------------------+
