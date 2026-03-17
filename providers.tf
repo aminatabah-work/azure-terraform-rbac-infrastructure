@@ -1,1 +1,3 @@
-# Azure provider configuration will be added here.
+provider "azurerm" {
+  features {}
+}
