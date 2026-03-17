@@ -25,6 +25,16 @@ This project demonstrates how to provision secure Azure infrastructure using Ter
 - GitHub
 - Infrastructure as Code (IaC)
 
+## Security Focus
+
+This project includes a basic Azure RBAC role assignment example to demonstrate role-based access control principles in Terraform. The configuration shows how permissions can be scoped to specific Azure resources using infrastructure as code.
+
+## Current Implementation
+
+- Azure Resource Group
+- Azure Storage Account
+- Azure RBAC Reader role assignment
+
 ## Why I Built This
 
 I created this project to strengthen my Azure cloud engineering skills and demonstrate hands-on experience with Terraform, infrastructure automation, and secure access design.
